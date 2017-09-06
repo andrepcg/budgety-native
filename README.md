@@ -22,10 +22,15 @@ The above formula is the core of the app. By showing the user the remaining dail
 ## FAQ
 
 **Q.** There are billions of money tracking apps, why another one?
+
 **A.** This app is mostly an experiment on human psychology. By showing you a daily budget that sometimes goes red, it forces you into spend less thus saving more.
 
+
 **Q.** What if I dont spend anything in one day?
+
 **A.** The daily budget will be spread amongst the remaing days.
 
+
 **Q.** If I receive a money gift do I have to take it into account?
+
 **A.** No. we only care about expenses and maintaining a positive daily budget.
