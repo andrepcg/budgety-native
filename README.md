@@ -34,3 +34,26 @@ The above formula is the core of the app. By showing the user the remaining dail
 **Q.** If I receive a money gift do I have to take it into account?
 
 **A.** No. we only care about expenses and maintaining a positive daily budget.
+
+
+## TODOS (high level tasks or features)
+
+- [ ] Mockup designs
+- [ ] Setup React + Redux + React Navigation
+- [ ] General features
+    - [ ] Add expense
+    - [ ] Set monthly income
+    - [ ] Set monthly fixed expenses (when a new month starts it will use the monthly expenses from last month)
+    - [ ] Calculate amount of money left for the day
+    - [ ] Settings
+        - [ ] Set default currency
+        - [ ] Option to anonymously share data (are users managing correctly their budget?)
+    - [ ] List transations
+        - [ ] Filters (category?, range - week, month, amount)
+    - [ ] Stats (how much was saved and spend)
+- [ ] Firebase
+    - [ ] Analytics
+
+## License
+
+GNU GENERAL PUBLIC LICENSE Version 3
