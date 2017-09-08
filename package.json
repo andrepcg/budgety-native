@@ -1,32 +1,53 @@
 {
   "name": "budgety-native",
-  "author": { "name": "André Perdigão", "email": "yandrepcg@gmail.com", "url": "http://andrepcg.me" },
+  "author": {
+    "name": "André Perdigão",
+    "email": "yandrepcg@gmail.com",
+    "url": "http://andrepcg.me"
+  },
   "license": "GPL-3.0",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-native-scripts": "1.3.1",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "backport",
+    "eslint-plugin-react": "^7.3.0",
+    "eslint-plugin-react-native": "^3.1.0",
     "jest-expo": "~20.0.0",
     "react-test-renderer": "16.0.0-alpha.12"
   },
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "start": "react-native-scripts start",
-    "eject": "react-native-scripts eject",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
+    "clean": "./node_modules/react-native/packager/packager.sh clean",
+    "devtools": "react-devtools",
+    "prerelease-android": "node scripts/processBuildNumber.js",
+    "release-android": "cd android && ./gradlew assembleRelease && cd ../",
+    "prestart": "node scripts/processBuildNumber.js",
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
     "test": "node node_modules/jest/bin/jest.js --watch"
   },
   "jest": {
     "preset": "jest-expo"
   },
   "dependencies": {
-    "expo": "^20.0.0",
+    "lodash": "^4.17.4",
     "react": "16.0.0-alpha.12",
-    "react-native": "^0.47.0"
+    "react-native": "^0.47.0",
+    "react-native-vector-icons": "^4.3.0",
+    "react-navigation": "^1.0.0-beta.11",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-persist": "^4.9.1",
+    "redux-thunk": "^2.2.0",
+    "remote-redux-devtools": "^0.5.12"
   },
   "repository": {
-    "type" : "git",
+    "type": "git",
     "url": "https://github.com/andrepcg/budgety-native.git"
   }
 }

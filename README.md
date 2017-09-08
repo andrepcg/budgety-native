@@ -39,7 +39,7 @@ The above formula is the core of the app. By showing the user the remaining dail
 ## TODOS (high level tasks or features)
 
 - [ ] Mockup designs
-- [ ] Setup React + Redux + React Navigation
+- [x] Setup React + Redux + React Navigation
 - [ ] General features
     - [ ] Add expense
     - [ ] Set monthly income
