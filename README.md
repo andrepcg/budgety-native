@@ -14,7 +14,7 @@ From the monthly budget we can derive a **daily budget**.
 
 The above formula is the core of the app. By showing the user the remaining daily budget can we influence him on spending less?
 
-## Tech
+## Built With
 
 - React native
 - Redux
@@ -55,6 +55,21 @@ The above formula is the core of the app. By showing the user the remaining dail
 - [ ] Firebase
     - [ ] Analytics
 
+## Supporters
+
+![Chillicorn](https://github.com/futurice/spiceprogram/raw/gh-pages/assets/img/logo/chilicorn_with_text-180.png)
+
+A big thank you to Futurice (and Chillicorn) for supporting this project and many other Open Source projects trough the [Spice Program](https://spiceprogram.org/)
+
+
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/andrepcg/budgety-native/tags). 
+
 ## License
 
-GNU GENERAL PUBLIC LICENSE Version 3
+This project is licensed under the GPL v3 license - see the [LICENSE.md](LICENSE.md) file for details
