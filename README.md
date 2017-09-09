@@ -38,6 +38,7 @@ The above formula is the core of the app. By showing the user the remaining dail
 
 ## TODOS (high level tasks or features)
 
+- [ ] Beautiful logo
 - [ ] Mockup designs
 - [x] Setup React + Redux + React Navigation
 - [ ] General features
