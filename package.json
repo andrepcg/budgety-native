@@ -2,7 +2,7 @@
   "name": "budgety-native",
   "author": {
     "name": "André Perdigão",
-    "email": "yandrepcg@gmail.com",
+    "email": "andrepcg@gmail.com",
     "url": "http://andrepcg.me"
   },
   "license": "GPL-3.0",
@@ -38,6 +38,7 @@
     "lodash": "^4.17.4",
     "react": "16.0.0-alpha.12",
     "react-native": "^0.47.0",
+    "react-native-svg": "^5.4.1",
     "react-native-vector-icons": "^4.3.0",
     "react-navigation": "^1.0.0-beta.11",
     "react-redux": "^5.0.6",

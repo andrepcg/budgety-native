@@ -40,14 +40,15 @@ The above formula is the core of the app. By showing the user the remaining dail
 
 ## TODOS (high level tasks or features)
 
-- [ ] Beautiful logo
+- [x] Beautiful logo
 - [ ] Mockup designs
 - [x] Setup React + Redux + React Navigation
 - [ ] General features
     - [ ] Add expense
     - [ ] Set monthly income
-    - [ ] Set monthly fixed expenses (when a new month starts it will use the monthly expenses from last month)
-    - [ ] Calculate amount of money left for the day
+    - [ ] Set monthly fixed expenses (when a new month starts it will use the monthly expenses from last month. User can change)
+    - [ ] Amount of money left for the day (and month)
+    - [ ] Chart of daily spendings
     - [ ] Settings
         - [ ] Set default currency
         - [ ] Option to anonymously share data (are users managing correctly their budget?)

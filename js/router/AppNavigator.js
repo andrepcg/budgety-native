@@ -19,7 +19,7 @@ export default class AppNavigator extends Component {
   componentDidMount() {
     BackHandler.addEventListener('hardwareBackPress', () => {
       const { dispatch, nav } = this.props;
-      if (get(nav, 'nav.routes[0].routes[0].index', 0) === 0) return false;
+      if (get(nav, 'nav.routes[0].index', 0) === 0) return false;
       dispatch(NavigationActions.back());
       return true;
     });
