@@ -1,4 +1,3 @@
-
 const initialState = {
   currency: 'EUR',
   shareData: false,

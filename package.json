@@ -13,11 +13,16 @@
     "babel-preset-react-native-stage-0": "^1.0.1",
     "eslint": "^4.6.1",
     "eslint-config-airbnb": "^15.1.0",
+    "eslint-config-prettier": "^2.5.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "backport",
+    "eslint-plugin-prettier": "^2.2.0",
     "eslint-plugin-react": "^7.3.0",
     "eslint-plugin-react-native": "^3.1.0",
     "jest-expo": "~20.0.0",
+    "prettier": "^1.7.0",
+    "prettier-eslint": "^8.1.0",
+    "prettier-eslint-cli": "^4.3.2",
     "react-test-renderer": "16.0.0-alpha.12"
   },
   "scripts": {
@@ -29,7 +34,9 @@
     "start": "react-native start",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "test": "node node_modules/jest/bin/jest.js --watch"
+    "test": "node node_modules/jest/bin/jest.js --watch",
+    "lint": "eslint js",
+    "lint-fix": "eslint js --fix"
   },
   "jest": {
     "preset": "jest-expo"

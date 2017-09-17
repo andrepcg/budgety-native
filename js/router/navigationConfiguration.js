@@ -10,7 +10,6 @@ import CreditsComponent from '../components/screens/Credits';
 //   />,
 // });
 
-
 const routeConfiguration = {
   MainScreen: {
     screen: MainContainer,
@@ -28,7 +27,9 @@ const stackNavigatorConfiguration = {
     shadowRadius: 0,
     shadowOpacity: 0,
   },
-
 };
 
-export const NavigationStack = StackNavigator(routeConfiguration, stackNavigatorConfiguration);
+export const NavigationStack = StackNavigator(
+  routeConfiguration,
+  stackNavigatorConfiguration,
+);

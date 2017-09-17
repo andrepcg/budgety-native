@@ -4,4 +4,8 @@ export const EDIT_CATEGORY = 'EDIT_CATEGORY';
 
 export const addCategory = name => ({ type: ADD_CATEGORY, name });
 export const removeCategory = name => ({ type: REMOVE_CATEGORY, name });
-export const editCategory = (id, newName) => ({ type: EDIT_CATEGORY, id, newName });
+export const editCategory = (id, newName) => ({
+  type: EDIT_CATEGORY,
+  id,
+  newName,
+});

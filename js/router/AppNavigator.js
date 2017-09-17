@@ -5,16 +5,14 @@ import { addNavigationHelpers, NavigationActions } from 'react-navigation';
 
 import { get } from 'lodash';
 
-
 import { NavigationStack } from './navigationConfiguration';
-
 
 @connect(({ nav }) => ({ nav }))
 export default class AppNavigator extends Component {
   static propTypes = {
     dispatch: PropTypes.func.isRequired,
     nav: PropTypes.object.isRequired,
-  }
+  };
 
   componentDidMount() {
     BackHandler.addEventListener('hardwareBackPress', () => {
@@ -31,6 +29,10 @@ export default class AppNavigator extends Component {
 
   render() {
     const { dispatch, nav } = this.props;
-    return <NavigationStack navigation={addNavigationHelpers({ dispatch, state: nav })} />;
+    return (
+      <NavigationStack
+        navigation={addNavigationHelpers({ dispatch, state: nav })}
+      />
+    );
   }
 }

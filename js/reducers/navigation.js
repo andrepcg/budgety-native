@@ -2,7 +2,6 @@
 
 import { NavigationStack } from '../router/navigationConfiguration';
 
-
 export default function nav(state, action) {
   let nextState;
   switch (action.type) {

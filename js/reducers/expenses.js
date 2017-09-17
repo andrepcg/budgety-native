@@ -1,7 +1,10 @@
 import { combineReducers } from 'redux';
 import slugify from 'slugify';
 
-import { ADD_CATEGORY, /* REMOVE_CATEGORY, */ EDIT_CATEGORY } from '../actions/expenses';
+import {
+  ADD_CATEGORY,
+  /* REMOVE_CATEGORY, */ EDIT_CATEGORY,
+} from '../actions/expenses';
 
 function categories(state = {}, action) {
   switch (action.type) {
