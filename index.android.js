@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
 import setup from './js/setup';
 
-AppRegistry.registerComponent('budgetynative', () => setup);
+AppRegistry.registerComponent('budgety-native', () => setup);

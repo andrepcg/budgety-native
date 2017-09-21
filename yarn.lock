@@ -468,6 +468,12 @@ babel-plugin-react-transform@2.0.2:
   dependencies:
     lodash "^4.6.1"
 
+babel-plugin-root-import@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-root-import/-/babel-plugin-root-import-5.1.0.tgz#80ea1cd5945b463a5e3f7e204a69478c573e328c"
+  dependencies:
+    slash "^1.0.0"
+
 babel-plugin-syntax-async-functions@^6.5.0, babel-plugin-syntax-async-functions@^6.8.0:
   version "6.13.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-async-functions/-/babel-plugin-syntax-async-functions-6.13.0.tgz#cad9cad1191b5ad634bf30ae0872391e0647be95"
@@ -1763,11 +1769,11 @@ eslint-plugin-jsx-a11y@backport:
     jsx-ast-utils "^1.4.0"
 
 eslint-plugin-prettier@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-2.2.0.tgz#f2837ad063903d73c621e7188fb3d41486434088"
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-2.3.1.tgz#e7a746c67e716f335274b88295a9ead9f544e44d"
   dependencies:
     fast-diff "^1.1.1"
-    jest-docblock "^20.0.1"
+    jest-docblock "^21.0.0"
 
 eslint-plugin-react-native@^3.1.0:
   version "3.1.0"
@@ -1836,18 +1842,18 @@ eslint@^4.5.0:
     text-table "~0.2.0"
 
 eslint@^4.6.1:
-  version "4.6.1"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.6.1.tgz#ddc7fc7fd70bf93205b0b3449bb16a1e9e7d4950"
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.7.1.tgz#849804136953ebe366782f9f8611e2cbd1b54681"
   dependencies:
     ajv "^5.2.0"
     babel-code-frame "^6.22.0"
     chalk "^2.1.0"
     concat-stream "^1.6.0"
     cross-spawn "^5.1.0"
-    debug "^2.6.8"
+    debug "^3.0.1"
     doctrine "^2.0.0"
     eslint-scope "^3.7.1"
-    espree "^3.5.0"
+    espree "^3.5.1"
     esquery "^1.0.0"
     estraverse "^4.2.0"
     esutils "^2.0.2"
@@ -1868,7 +1874,7 @@ eslint@^4.6.1:
     natural-compare "^1.4.0"
     optionator "^0.8.2"
     path-is-inside "^1.0.2"
-    pluralize "^4.0.0"
+    pluralize "^7.0.0"
     progress "^2.0.0"
     require-uncached "^1.0.3"
     semver "^5.3.0"
@@ -1876,13 +1882,6 @@ eslint@^4.6.1:
     strip-json-comments "~2.0.1"
     table "^4.0.1"
     text-table "~0.2.0"
-
-espree@^3.5.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/espree/-/espree-3.5.0.tgz#98358625bdd055861ea27e2867ea729faf463d8d"
-  dependencies:
-    acorn "^5.1.1"
-    acorn-jsx "^3.0.0"
 
 espree@^3.5.1:
   version "3.5.1"
@@ -2821,13 +2820,17 @@ jest-diff@^20.0.3:
     jest-matcher-utils "^20.0.3"
     pretty-format "^20.0.3"
 
-jest-docblock@^20.0.1, jest-docblock@^20.0.3:
+jest-docblock@^20.0.3:
   version "20.0.3"
   resolved "https://registry.yarnpkg.com/jest-docblock/-/jest-docblock-20.0.3.tgz#17bea984342cc33d83c50fbe1545ea0efaa44712"
 
 jest-docblock@^20.1.0-alpha.3:
   version "20.1.0-echo.1"
   resolved "https://registry.yarnpkg.com/jest-docblock/-/jest-docblock-20.1.0-echo.1.tgz#be02f43ee019f97e6b83267c746ac7b40d290fe8"
+
+jest-docblock@^21.0.0:
+  version "21.1.0"
+  resolved "https://registry.yarnpkg.com/jest-docblock/-/jest-docblock-21.1.0.tgz#43154be2441fb91403e36bb35cb791a5017cea81"
 
 jest-environment-jsdom@^20.0.3:
   version "20.0.3"
@@ -3898,10 +3901,6 @@ plist@^1.2.0:
     xmlbuilder "4.0.0"
     xmldom "0.1.x"
 
-pluralize@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-4.0.0.tgz#59b708c1c0190a2f692f1c7618c446b052fd1762"
-
 pluralize@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-7.0.0.tgz#298b89df8b93b0221dbf421ad2b1b1ea23fc6777"
@@ -3937,9 +3936,25 @@ prettier-eslint-cli@^4.3.2:
     rxjs "^5.3.0"
     yargs "8.0.2"
 
-prettier-eslint@^8.0.0, prettier-eslint@^8.1.0:
+prettier-eslint@^8.0.0:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/prettier-eslint/-/prettier-eslint-8.1.0.tgz#8b0366e180c0d4ec1f76ccd635bb20e3f47bc156"
+  dependencies:
+    common-tags "^1.4.0"
+    dlv "^1.1.0"
+    eslint "^4.5.0"
+    indent-string "^3.2.0"
+    lodash.merge "^4.6.0"
+    loglevel-colored-level-prefix "^1.0.0"
+    prettier "^1.7.0"
+    pretty-format "^20.0.3"
+    require-relative "^0.8.7"
+    typescript "^2.4.2"
+    typescript-eslint-parser "^7.0.0"
+
+prettier-eslint@^8.1.0:
+  version "8.1.1"
+  resolved "https://registry.yarnpkg.com/prettier-eslint/-/prettier-eslint-8.1.1.tgz#826d71d79389c93d59edd56e3f0d58264a6ce36f"
   dependencies:
     common-tags "^1.4.0"
     dlv "^1.1.0"

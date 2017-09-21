@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 
 import AppNavigator from './router/AppNavigator';
-// import LoadingScreen from './components/Loading';
+import Splash from './components/Splash';
 import configureStore from './configureStore';
 
 console.disableYellowBox = true;
@@ -20,7 +20,8 @@ export default class setup extends Component {
   render() {
     const { hydrated, store } = this.state;
 
-    // if (!hydrated) return <LoadingScreen />;
+    // if (!hydrated) return <Splash />;
+    return <Splash />;
 
     return (
       <Provider store={store}>
