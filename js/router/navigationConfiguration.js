@@ -1,18 +1,37 @@
 // import React from 'react';
-import { StackNavigator } from 'react-navigation';
+import { StackNavigator, DrawerNavigator } from 'react-navigation';
 
 // import Header from '../components/blocks/navigation/Header';
 import MainContainer from '../containers/Main';
+import TransactionContainer from '../containers/Transaction';
 import CreditsComponent from '../components/screens/Credits';
+import Drawer from '../components/Drawer';
 
 // const navOptions = ({ navigation }) => ({
 //   header: <Header
 //   />,
 // });
 
-const routeConfiguration = {
-  MainScreen: {
+const drawerNav = DrawerNavigator({
+  Main: {
     screen: MainContainer,
+  },
+  // Stats: {
+  //   screen: StatsContainer,
+  // },
+},
+{
+  contentComponent: Drawer,
+  drawerWidth: 250,
+},
+);
+
+const routeConfiguration = {
+  Drawer: {
+    screen: drawerNav,
+  },
+  Transaction: {
+    screen: TransactionContainer,
   },
   CreditsScreen: {
     screen: CreditsComponent,
@@ -20,13 +39,8 @@ const routeConfiguration = {
 };
 
 const stackNavigatorConfiguration = {
-  initialRouteName: 'MainScreen',
+  initialRouteName: 'Drawer',
   headerMode: 'float',
-  cardStyle: {
-    backgroundColor: 'white',
-    shadowRadius: 0,
-    shadowOpacity: 0,
-  },
 };
 
 export const NavigationStack = StackNavigator(

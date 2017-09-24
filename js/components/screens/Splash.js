@@ -20,20 +20,20 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: GREEN,
-    alignItems: 'center'
+    alignItems: 'center',
   },
   logo: {
     // position: 'absolute',
     width: 240,
     // left: Dimensions.get('window').width / 2 - 25,
     top: 200,
-    resizeMode: 'contain'
+    resizeMode: 'contain',
   },
   pattern: {
     position: 'absolute',
     top: 0,
     left: 0,
     height: Dimensions.get('window').height,
-    resizeMode: 'repeat'
+    resizeMode: 'repeat',
   },
 });

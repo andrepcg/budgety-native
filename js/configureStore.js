@@ -9,7 +9,7 @@ import reducer from './reducers';
 export default function configureStore(onPersist) {
   const enhancer = compose(
     applyMiddleware(thunkMiddleware),
-    autoRehydrate(),
+    // autoRehydrate(),
     devTools({
       name: 'budgety',
       realtime: true,
