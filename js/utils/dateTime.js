@@ -17,4 +17,4 @@ export const endOfMonth = (date = new Date()) =>
     .toDate();
 
 export const monthDaysArray = (date = new Date()) =>
-  dateArray.range(startOfMonth(date), endOfMonth(date))
+  dateArray.range(startOfMonth(date), endOfMonth(date));
