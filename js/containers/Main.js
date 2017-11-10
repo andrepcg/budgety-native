@@ -5,17 +5,19 @@ import { connect } from 'react-redux';
 import { endOfMonth, currentMonthKey } from '~/utils/dateTime';
 
 import MonthExpenseChart from '~/components/MonthExpenseChart';
+import Card from '~/components/Card';
+import { GREEN } from '~/styles';
 
 const mapStateToProps = state => {
-  const { expenses, months } = state;
+  const { months } = state;
 
-  const { date, fixedIncome, fixedExpenses, transactions } = months[currentMonthKey()];
+  const { date, fixedIncome, fixedExpenses, expenses } = months[currentMonthKey()];
 
   return {
     currentMonth: date,
     fixedIncome,
     fixedExpenses,
-    transactions,
+    expenses,
   };
 };
 
@@ -26,20 +28,25 @@ export default class Main extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.summary}>
-          <Text>Month: {this.props.currentMonth.toDateString()}</Text>
-        </View>
-
+        <Card>
+          <View style={styles.summary}>
+            <Text>Month: {this.props.currentMonth.toDateString()}</Text>
+          </View>
+        </Card>
         {/* <View style={styles.chart}> */}
+        <Card>
           <MonthExpenseChart
             startOfMonth={this.props.currentMonth}
             endOfMonth={endOfMonth(this.props.currentMonth)}
           />
+        </Card>
         {/* </View> */}
 
-        <ScrollView style={styles.list}>
-          <Text>List of expenses</Text>
-        </ScrollView>
+        <Card size={2}>
+          <ScrollView style={styles.list}>
+            <Text>List of expenses</Text>
+          </ScrollView>
+        </Card>
       </View>
     );
   }
@@ -48,18 +55,19 @@ export default class Main extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: GREEN,
+    paddingTop: 10,
   },
   summary: {
     // flex: 1,
-    height: 200,
-    backgroundColor: 'red',
+    // height: 150,
   },
   chart: {
     height: 100,
     // backgroundColor: 'blue',
   },
   list: {
-    flex: 1,
-    backgroundColor: 'green',
+    // flex: 1,
+    // backgroundColor: 'green',
   },
 });
