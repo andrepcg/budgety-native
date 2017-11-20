@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StyleSheet, View } from 'react-native';
+import styled from 'styled-components/native';
 
 import { VictoryChart, VictoryBar, VictoryAxis } from 'victory-native';
 import { range, random } from 'lodash';
 
 import { monthDaysArray } from '~/utils/dateTime';
+
+const Container = styled.View`height: 130;`;
 
 export default function MonthExpenseChart(props) {
   const data = monthDaysArray().map(day => {
@@ -13,7 +15,7 @@ export default function MonthExpenseChart(props) {
   });
 
   return (
-    <View style={styles.chart}>
+    <Container>
       <VictoryChart
         scale={{ x: 'time', y: 'linear' }}
         height={130}
@@ -31,7 +33,7 @@ export default function MonthExpenseChart(props) {
         />
         <VictoryBar data={data} />
       </VictoryChart>
-    </View>
+    </Container>
   );
 }
 
@@ -39,11 +41,3 @@ MonthExpenseChart.propTypes = {
   startOfMonth: PropTypes.instanceOf(Date),
   endOfMonth: PropTypes.instanceOf(Date),
 };
-
-const styles = StyleSheet.create({
-  chart: {
-    height: 130,
-    // flex: 1,
-    // backgroundColor: 'blue',
-  },
-});

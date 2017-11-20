@@ -58,6 +58,7 @@
     "remote-redux-devtools": "^0.5.12",
     "reselect": "^3.0.1",
     "slugify": "^1.2.1",
+    "styled-components": "^2.2.3",
     "victory-native": "^0.15.0"
   },
   "repository": {
